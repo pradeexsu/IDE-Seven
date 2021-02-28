@@ -41,9 +41,9 @@ jobs:
         # Build and test the project, then
         # deploy to Azure Web App.
         npm install
-        node index.js
-#        npm start --if-present
-        #npm run test --if-present
+        npm start test
+        npm start build
+        
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
